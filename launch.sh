@@ -10,8 +10,6 @@
 #SBATCH --time=00:4:00
 
 module load conda/py3-latest
-conda activate torchbearer
-export NCCL_DEBUG=INFO
-export PYTHONFAULTHANDLER=1
+conda activate my-pytorch-env
 
 python cifar.py
