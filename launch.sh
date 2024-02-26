@@ -1,5 +1,6 @@
 #!/bin/bash -l
 #SBATCH -p ecsstudents
+#SBATCH -A ecsstudents
 #SBATCH --mem=32G
 #SBATCH --gres=gpu:0
 #SBATCH --nodes=1
@@ -9,8 +10,8 @@
 #SBATCH --time=00:4:00
 
 module load conda/py3-latest
-#conda activate torchbearer
+conda activate torchbearer
 export NCCL_DEBUG=INFO
 export PYTHONFAULTHANDLER=1
 
-python hw.py
+python cifar.py

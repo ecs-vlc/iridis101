@@ -33,9 +33,9 @@ Lets also clone this git repository so we can try training a model:
 	git clone https://github.com/ecs-vlc/iridis101.git
 	cd iridis101
 
-The repository contains three files: this readme, a python script for training ResNet18 models on CIFAR-10 ("cifar10.py"), and a SLURM Batch script ("launch.sh") which is configured to run the python script on Alpha. Before launching the job we need to be aware that the Iridis compute nodes (and Alpha) do not have direct internet access, and so cannot download files. Before running the script, we first need to download the data; the script is capable of doing this for us by just running it on the login node:
+The repository contains three files: this readme, a python script for training ResNet18 models on CIFAR-10 ("cifar.py"), and a SLURM Batch script ("launch.sh") which is configured to run the python script on Alpha. Before launching the job we need to be aware that the Iridis compute nodes (and Alpha) do not have direct internet access, and so cannot download files. Before running the script, we first need to download the data; the script is capable of doing this for us by just running it on the login node:
 
-	python cifar10.py
+	python cifar.py
 
 This will run until an error occurs when pytorch tries to access the GPU (the login node doesn't have one!), but by that point the data will have already been downloaded.
 
