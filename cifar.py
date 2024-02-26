@@ -19,7 +19,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
     parser.add_argument('--dataset-path', type=str, default=".", help='Optional dataset path')
     parser.add_argument('--model', default="ResNet18", type=str, help='model type')
-    parser.add_argument('--epochs', default=2, type=int, help='total epochs to run')
+    parser.add_argument('--epochs', default=10, type=int, help='total epochs to run')
     parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
     parser.add_argument('--batch-size', default=128, type=int, help='batch size')
     parser.add_argument('--device', default='cuda', type=str, help='Device on which to run')
