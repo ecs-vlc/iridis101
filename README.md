@@ -21,7 +21,7 @@ The first time you log in to the login node you need to create a python environm
 	conda create -n "my-pytorch-env" python=3.10
 	conda activate my-pytorch-env
 	conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
-	pip install torchbearer
+	pip install packaging torchbearer
 
 When we login in the future we can just activate the environment:
 

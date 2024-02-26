@@ -2,7 +2,7 @@
 #SBATCH -p ecsstudents
 #SBATCH -A ecsstudents
 #SBATCH --mem=32G
-#SBATCH --gres=gpu:0
+#SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH -c 32
 #SBATCH --mail-type=ALL
