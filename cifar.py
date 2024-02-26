@@ -25,7 +25,7 @@ if __name__ == '__main__':
     parser.add_argument('--device', default='cuda', type=str, help='Device on which to run')
     parser.add_argument('--num-workers', default=8, type=int, help='Number of dataloader workers')
 
-    parser.add_argument('--reload', action='store_true', default=False,
+    parser.add_argument('--resume', action='store_true', default=False,
                         help='Set to resume training from model path')
     parser.add_argument('--verbose', type=int, default=2, choices=[0, 1, 2])
     parser.add_argument('--seed', default=0, type=int, help='random seed')
