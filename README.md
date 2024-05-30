@@ -40,7 +40,7 @@ The repository contains three files: this readme, a python script for training R
 
 This will run until an error occurs when pytorch tries to access the GPU (the login node doesn't have one!), but by that point the data will have already been downloaded.
 
-Next edit the SLURM script in an editor like vim, and change the email address to match your own. You'll see that the SLURM script contains a number of lines starting with `#SBATCH` which are instructions to tell SLURM what computational resources you need (one GPU on one node on the Alpha "ecsstudents" partition], 32GB of RAM, 32 CPU cores) and how long you want to run the code for (defaults to 4 minutes in this script). Everything else just enables your conda python environment and runs the code. 
+Next edit the SLURM script in an editor like vim, and change the email address to match your own. You'll see that the SLURM script contains a number of lines starting with `#SBATCH` which are instructions to tell SLURM what computational resources you need (one GPU on one node on the Alpha `ecsstudents' partition, 32GB of RAM, 32 CPU cores) and how long you want to run the code for (defaults to 4 minutes in this script). Everything else just enables your conda python environment and runs the code. 
 
 To launch a job we just run:
 
