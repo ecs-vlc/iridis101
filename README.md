@@ -52,7 +52,7 @@ You'll get email status updates when the job starts and finishes. From the login
 
 using the job id printed by sbatch when you ran it.
 
-Other useful things:
+**Other useful things:**
 
 - `squeue` lets you look at the queue
 - `scancel` lets you cancel a queued/running job based on the job id
