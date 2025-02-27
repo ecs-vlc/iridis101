@@ -1,9 +1,9 @@
 # Training CIFAR-10 on IRIDIS, Lyceum and ECS Alpha
 
 Iridis is the University's supercomputer. Currently on the 5th generation, Iridis 5 contains a range of accelerators ranging from GTX1080 machines through V100 multi accelerator nodes to Dual A100 nodes. Lyceum is a partition of Iridis 5
-available for taught student use. In 2020 Iridis 5 was expanded with the ECS Alpha partition, a £200K investment for the School of Electronics and Computer Science (ECS) in 6x compute nodes each with 4x 48GB Nvidia GPU cards available for the schools’ research staff and students.
+available for taught student use. In 2020 Iridis 5 was expanded with the ECS Alpha partition, a £200K investment for the School of Electronics and Computer Science (ECS) in 6x compute nodes each with 4x 48GB Nvidia GPU cards available for the schools’ research staff and students. ECS is investing in the next generation of student-facing compute with new nodes being procured in Q2 2025 (likely 7x L4 24GB GPUs per node).
 
-The scheduled launch of the latest iteration Iridis 6 in the coming months will house over 50,000 cores of HPC. This will include SWARM (the Southampton Wolfson Ai Research Machine), a £700K investment in 7x compute nodes for use by research staff in ECS and the Optoelectronics Research Centre. This investment includes: 5x Compute nodes each with 4x 80GB A100 SXM GPU nodes and 2x Compute nodes each with 8x 80GB H100 SXM GPU nodes, giving users access to the very latest technology from Nvidia.
+The latest iteration, Iridis 6 houses over 50,000 cores of HPC. The Iridis6 GPU service, IridisX, includes SWARM (the Southampton Wolfson Ai Research Machine), a £700K investment in 10x compute nodes for use by research staff in ECS and the Optoelectronics Research Centre. This investment includes: 5x Compute nodes each with 4x 80GB A100 SXM GPU nodes, 2x Compute nodes each with 8x 80GB H100 SXM GPU nodes, and 3x nodes with 7x 24GB L4 GPUs, giving users access to the very latest technology from Nvidia.
 
 The systems run batch jobs using the SLURM job scheduler and utilise features such as quality of service (QOS) and partition scavenging. Applications typically run using the standard machine learning framework, Python, Tensorflow, PyTorch, Keras, all of which are supported and maintained centrally.
 
