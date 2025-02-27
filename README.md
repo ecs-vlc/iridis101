@@ -57,5 +57,5 @@ using the job id printed by sbatch when you ran it.
 - `squeue` lets you look at the queue
 - `scancel` lets you cancel a queued/running job based on the job id
 - when a job is running you can ssh into the node (look at squeue to see which node) and run `top` and `nvidia-smi` to monitor resource usage
-- `nvidia-smi-dmon` is really useful for monitoring throughput
+- `nvidia-smi -dmon` is really useful for monitoring throughput
 
