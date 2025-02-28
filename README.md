@@ -18,7 +18,7 @@ or alternatively via `iridis5_b` or `iridis5_c`.
 The first time you log in to the login node you need to create a python environment and install any dependencies to run your code. This environment will be available on the compute nodes when your jobs run. We'll create an environment and setup pytorch and torchbearer:
 
 	module load conda/py3-latest
-	conda create -n "my-pytorch-env" python=3.10
+	conda create -n "my-pytorch-env" python=3.11
 	conda activate my-pytorch-env
 	pip3 install torch torchvision torchaudio
 	pip install packaging torchbearer
