@@ -3,8 +3,6 @@
 #SBATCH --mem=1G
 #SBATCH --nodes=1
 #SBATCH -c 1
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=your_email@soton.ac.uk
 #SBATCH --time=00:00:10
 
 echo "$HOSTNAME says Hello World"
