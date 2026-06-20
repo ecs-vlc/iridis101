@@ -1,4 +1,4 @@
-# Training CIFAR-10 on IRIDIS, Lyceum and ECS Alpha
+# Training CIFAR-10 on IRIDIS and SWARM
 
 Iridis is the University's supercomputer. Currently on the 6th generation, Iridis 6 houses over 50,000 cores of HPC, coupled with a state of the art storage backend. Iridis X is the name of the part of the service that contains GPU accelerators; it is disinct from Iridis 6 compute, but uses the same storage backbone. Iridis X is also the template for the upcoming Iridis 7 which is currently (2026) being procured. Iridis X contains a number of partitions/nodes with different GPUs: Nvidia L4s, L40s, A100s, H100s and H200s and a node based around the AMD MI200. 
 
