@@ -5,8 +5,6 @@
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH -c 6
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=your_email@soton.ac.uk
 #SBATCH --time=00:4:00
 
 module load conda/python3
