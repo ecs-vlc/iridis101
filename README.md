@@ -10,7 +10,7 @@ The systems run batch jobs using the SLURM job scheduler and utilise features su
 
 ECS Staff and PhD students have access to SWARM nodes automatically. ECS students need to request access to the ecsstudents nodes by registering [here](https://sotonproduction.service-now.com/serviceportal?id=kb_article_view&sysparm_article=KB0083316).
 
-Iridis X is accessed via the iridis 5 login nodes using SSH:
+Iridis X is accessed via the iridisX login nodes using SSH:
 
 	ssh loginx001.iridis.soton.ac.uk
 
@@ -19,7 +19,7 @@ or alternatively via `iridisX002` or `iridisX003`.
 The first time you log in to the login node you need to create a python environment and install any dependencies to run your code. This environment will be available on the compute nodes when your jobs run. We'll create an environment and setup pytorch and torchbearer:
 
 	module load conda/py3-latest
-	conda create -n "my-pytorch-env" python=3.13
+	conda create --channel defaults -n "my-pytorch-env" python=3.13
 	conda activate my-pytorch-env
 	pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu132
 	pip install packaging torchbearer
@@ -40,13 +40,13 @@ The repository contains three files: this readme, a python script for training R
 
 This will run until an error occurs when pytorch tries to access the GPU (the not all the login nodes have GPUs), but by that point the data will have already been downloaded. If your login node does have a GPU then `ctrl-c` to stop the process once the data has been downloaded.
 
-Next edit the SLURM script in an editor like vim, and change the email address to match your own. You'll see that the SLURM script contains a number of lines starting with `#SBATCH` which are instructions to tell SLURM what computational resources you need (one GPU on one node on the `ecsstudents' partition, 32GB of RAM, 6 CPU cores) and how long you want to run the code for (defaults to 4 minutes in this script). Everything else just enables your conda python environment and runs the code. 
+Next edit the SLURM script in an editor like vim, and change the email address to match your own. You'll see that the SLURM script contains a number of lines starting with `#SBATCH` which are instructions to tell SLURM what computational resources you need (one GPU on one node on the `ecsstudents' partition, 24GB of RAM, 6 CPU cores) and how long you want to run the code for (defaults to 4 minutes in this script). Everything else just enables your conda python environment and runs the code. 
 
 To launch a job we just run:
 
 	sbatch launch.sh
 
-You'll get email status updates when the job starts and finishes. From the login node you'll see a log file is created in the directory you ran `sbatch` and eventually see the trained model file once it gets created. You can watch the log file get filled up with:
+From the login node you'll see a log file is created in the directory you ran `sbatch` and eventually see the trained model file once it gets created. You can watch the log file get filled up with:
 
 	tail slurm-<slurm_job_id>.log
 
