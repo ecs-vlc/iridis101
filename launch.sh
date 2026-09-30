@@ -1,6 +1,5 @@
 #!/bin/bash -l
 #SBATCH -p ecsstudents_l4
-#SBATCH -A ecsstudents
 #SBATCH --mem=24G
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
