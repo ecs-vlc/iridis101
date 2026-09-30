@@ -1,6 +1,7 @@
 #!/bin/bash -l
-#SBATCH -p l4,scavenger_l4,slurm_a100
-#SBATCH --mem=32G
+#SBATCH -p ecsstudents_l4
+#SBATCH -A ecsstudents
+#SBATCH --mem=24G
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH -c 6
