@@ -1,5 +1,6 @@
 #!/bin/bash -l
-#SBATCH -p l4,scavenger_l4
+#SBATCH -p ecsstudents_l4
+#SBATCH -A ecsstudents
 #SBATCH --mem=1G
 #SBATCH --nodes=1
 #SBATCH -c 1
